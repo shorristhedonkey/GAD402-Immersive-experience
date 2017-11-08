@@ -1,17 +1,18 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>Triumpet! 0.12</title>
+      <title>Triumpet! 0.13</title>
       <script src="aframe-v0.7.1.js"></script>
       <script src="aframe-animation-component.js"></script>
     </head>
     <body>
           <a-scene>
             <a-assets>
+              <a-asset-item id="Trumpet" src="Trumpet.dae"></a-asset-item>
             </a-assets>
             <a-entity position="0 0 0">
               <a-camera>
-                <a-box scale="1 1 7" position="0 -1 1"></a-box>
+              <a-entity src="#Trumpet"></a-entity>
               </a-camera>
             </a-entity>
             <a-plane rotation="-90 0 0" scale="30 30 30"></a-plane>
