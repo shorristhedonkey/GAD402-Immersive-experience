@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>HelloVR_0.191</title>
+      <title>Triumpet!</title>
       <script src="aframe-v0.7.1.js"></script>
       <script src="aframe-animation-component.js"></script>
     </head>
@@ -9,10 +9,11 @@
           <a-scene>
             <a-assets>
             </a-assets>
-            <a-entity id="parent" position="0 0 0">
-              <a-camera></a-camera>
+            <a-entity position="0 0 0">
+              <a-camera>
+                <a-box position="0.5 0.5 0" scale"1 1 4"></a-box>
+              </a-camera>
             </a-entity>
-            <a-box id="child-1" position="0.5 0.5 0" scale"1 1 4"></a-box>
             <a-sky color="#030303"></a-sky>
           </a-scene>
     </body>
