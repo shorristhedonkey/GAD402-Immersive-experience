@@ -10,6 +10,7 @@
           <a-scene>
             <a-assets>
               <a-asset-item id="Trumpet" src="Trumpet.dae"></a-asset-item>
+              <a-asset-item id="stage" src="stage.dae"></a-asset-item>
               <a-asset-item id="americanDream" src="american dream.mp3"></a-asset-item>
             </a-assets>
               <a-entity position="0 0 0">
@@ -22,7 +23,8 @@
             <!--<a-entity
             audioanalyser="src: #americanDream "
             ></a-entity>-->
-            <a-plane rotation="-90 0 0" scale="30 30 30"></a-plane>
+            <a-entity collada-model="#stage"> </a-entity>
+            <!--FUUUUCK<a-plane rotation="-90 0 0" scale="30 30 30"></a-plane>-->
             <a-sky color="#030303"></a-sky>
           </a-scene>
     </body>
