@@ -8,19 +8,19 @@
     <body>
           <a-scene>
             <a-assets>
-              <!--<a-asset-item id="Trumpet" src="Trumpet.dae"></a-asset-item>-->
+              <a-asset-item id="Trumpet" src="Trumpet.dae"></a-asset-item>
               <a-asset-item id="stage" src="stage.dae"></a-asset-item>
               <audio id="americanDream" src="Miles Davis.mp3"></audio>
               <audio id="applause" src="audience applause.mp3"></audio>
-              <a-asset-item id="Trumpet-obj" src="Trumpet.obj"></a-asset-item>
-              <a-asset-item id="Trumpet-mtl" src="Trumpet.mtl"></a-asset-item>
+              <!--<a-asset-item id="Trumpet-obj" src="Trumpet.obj"></a-asset-item>
+              <a-asset-item id="Trumpet-mtl" src="Trumpet.mtl"></a-asset-item>-->
             </a-assets>
               <a-entity position="100 80 0" rotation="0 -90 0">
                 <!--<a-light type="point" color="blue" position="0 5 0"></a-light>-->
                 <a-camera>
                   <a-entity position="0 -1 -2">
-                    <!--<a-collada-model src="#Trumpet"></a-collada-model>-->
-                    <a-obj-model src="Trumpet.obj" color= "Red"></a-obj-model>
+                    <a-collada-model src="#Trumpet"></a-collada-model>
+                    <!--<a-obj-model src="Trumpet.obj" color= "Red"></a-obj-model>-->
                     <a-sound src="#americanDream" autoplay="true"></a-sound>
                     <a-sound src="#applause" autoplay="true"></a-sound>
                   </a-entity>
