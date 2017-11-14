@@ -10,6 +10,8 @@
             <a-assets>
               <a-asset-item id="Trumpet" src="Trumpet.dae"></a-asset-item>
               <a-asset-item id="stage" src="stage.dae"></a-asset-item>
+              <a-asset-item id="building" src="building.dae"></a-asset-item>
+              <a-asset-item id="chairs" src="chairs.dae"></a-asset-item>
               <audio id="americanDream" src="Miles Davis.mp3"></audio>
               <audio id="applause" src="audience applause.mp3"></audio>
             </a-assets>
@@ -17,14 +19,15 @@
                 <!--<a-light type="point" color="blue" position="0 5 0"></a-light>-->
                 <a-camera>
                   <a-entity position="0 -1 -2">
-                    <a-collada-model src="#Trumpet" color=#000000></a-collada-model>
+                    <a-collada-model src="#Trumpet" co></a-collada-model>
                     <a-sound src="#americanDream" autoplay="true"></a-sound>
                     <a-sound src="#applause" autoplay="true"></a-sound>
                   </a-entity>
                 </a-camera>
               </a-entity>
-            <a-entity collada-model="#stage" scale="10 10 10" position="-10 -10 -4" color="E4E4E4">
-            </a-entity>
+            <a-entity collada-model="#stage" scale="10 10 10" position="-10 -10 -4"></a-entity>
+            <a-entity collada-model="#building" scale="10 10 10" position="-10 -10 -4"></a-entity>
+            <a-entity collada-model="#chairs" scale="10 10 10" position="-10 -10 -4"></a-entity>
             <a-sky color="#030303"></a-sky>
           </a-scene>
     </body>
